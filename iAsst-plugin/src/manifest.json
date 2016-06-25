@@ -13,20 +13,21 @@
   "browser_action": {
     "default_title": "iAsst",
     "default_icon": "imgs/icons/iasst_16.png",
-    "default_popup": "popup/index.html"
+    "default_popup": "view/browser_action/index.html"
   },
 
   "background": {
     "persistent": false,
     "scripts": [
       "libs/cmn/http-request.js",
-      "background.js"
+      "view/background/index.js"
     ]
   },
 
   "permissions": [
     "tabs",
-    "contextMenus"
+    "contextMenus",
+    "http://*/*"
   ],
 
   "web_accessible_resources": [
