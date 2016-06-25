@@ -6,7 +6,8 @@
 
   "icons": {
     "16": "imgs/icons/iasst_16.png",
-    "48": "imgs/icons/iasst_48.png"
+    "48": "imgs/icons/iasst_48.png",
+    "128": "imgs/icons/iasst_128.png"
   },
 
   "browser_action": {
@@ -16,9 +17,9 @@
   },
 
   "background": {
-    "persistent": true,
+    "persistent": false,
     "scripts": [
-      "libs/jquery/jquery-2.2.4.min.js",
+      "libs/cmn/http-request.js",
       "background.js"
     ]
   },
