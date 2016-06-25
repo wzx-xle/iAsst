@@ -10,17 +10,24 @@ function httpRequest(method, url, data, succ, err) {
     var xhr = new XMLHttpRequest();
     xhr.open(method, url, true);
     xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            var respData = xhr.responseText;
-            if (xhr.responseType == 'json') {
-                respData = JSON.parse((respData));
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                var respData = xhr.responseText;
+                if (xhr.responseType == 'json') {
+                    respData = JSON.parse((respData));
+                }
+                succ(respData);
             }
-            succ(respData);
+            else {
+                if (null != err && xhr.status > 0) {
+                    err(xhr.status);
+                }
+            }
         }
-        else {
-            if (null != err) {
-                err(xhr.readyState || xhr.status);
-            }
+    };
+    xhr.onerror = function () {
+        if (null != err) {
+            err(-1);
         }
     };
     xhr.send(data);
