@@ -18,7 +18,9 @@ function httpRequest(method, url, data, succ, err) {
             succ(respData);
         }
         else {
-            err(xhr.readyState || xhr.status);
+            if (null != err) {
+                err(xhr.readyState || xhr.status);
+            }
         }
     };
     xhr.send(data);
@@ -32,6 +34,11 @@ function httpRequest(method, url, data, succ, err) {
  * @param err  失败时的回调函数
  */
 function httpGet(url, data, succ, err) {
+    if (typeof data === 'function') {
+        err = succ;
+        succ = data;
+        data = null;
+    }
     var params = '';
     if (data != null) {
         if (typeof data === 'object') {
@@ -63,6 +70,11 @@ function httpGet(url, data, succ, err) {
  * @param err  失败时的回调函数
  */
 function httpPost(url, data, succ, err) {
+    if (typeof data === 'function') {
+        err = succ;
+        succ = data;
+        data = null;
+    }
     if (data != null && typeof data === 'object') {
         var tmp = '';
         for (var prop in data) {
