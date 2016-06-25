@@ -16,6 +16,8 @@
     "default_popup": "view/browser_action/index.html"
   },
 
+  "options_page": "view/options_page/index.html",
+
   "background": {
     "persistent": false,
     "scripts": [
