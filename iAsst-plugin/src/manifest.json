@@ -18,7 +18,7 @@
   "background": {
     "persistent": true,
     "scripts": [
-      "libs/jquery-2.2.4.min.js",
+      "libs/jquery/jquery-2.2.4.min.js",
       "background.js"
     ]
   },
