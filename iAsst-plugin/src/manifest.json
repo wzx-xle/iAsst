@@ -19,10 +19,11 @@
   "options_page": "view/options_page/index.html",
 
   "background": {
-    "persistent": false,
+    "persistent": true,
     "scripts": [
       "libs/cmn/http-request.js",
-      "view/background/index.js"
+      "view/background/index.js",
+      "view/background/context-menus.js"
     ]
   },
 
