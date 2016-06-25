@@ -19,4 +19,4 @@ Chrome插件，帮助你使用Chrome
 iAsst使用[GNU General Public License v2.0](http://choosealicense.com/licenses/gpl-2.0/)协议
 
 ## 参与者
-#hyhjwzx
+@hyhjwzx
