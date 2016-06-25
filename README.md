@@ -14,7 +14,7 @@ Chrome插件，帮助你使用Chrome
 2. web服务，提供数据存储
 
 ## 版权声明
-iAsst使用 [GNU General Public License v2.0](http://choosealicense.com/licenses/gpl-2.0/) 协议
+iAsst使用 [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.txt) 协议
 
 ## 参与者
 [hyhjwzx](http://git.oschina.net/hyhjwzx)
