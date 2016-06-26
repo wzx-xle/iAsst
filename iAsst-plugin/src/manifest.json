@@ -20,11 +20,7 @@
 
   "background": {
     "persistent": true,
-    "scripts": [
-      "libs/cmn/http-request.js",
-      "view/background/index.js",
-      "view/background/context-menus.js"
-    ]
+    "page": "view/background/index.html"
   },
 
   "permissions": [
