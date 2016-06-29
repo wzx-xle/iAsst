@@ -9,6 +9,9 @@
 function httpRequest(method, url, data, succ, err) {
     var xhr = new XMLHttpRequest();
     xhr.open(method, url, true);
+	if (method == 'POST') {
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=utf-8');
+	}
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
