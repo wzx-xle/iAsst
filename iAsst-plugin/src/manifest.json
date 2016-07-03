@@ -16,6 +16,14 @@
     "default_popup": "view/browser_action/index.html"
   },
 
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["libs/jquery/jquery-2.2.4.min.js", "view/content_scripts/index.js"],
+      "css": ["view/content_scripts/index.css"]
+    }
+  ],
+
   "options_page": "view/options_page/index.html",
 
   "background": {
@@ -26,7 +34,8 @@
   "permissions": [
     "tabs",
     "contextMenus",
-    "http://*/*"
+    "http://*/*",
+    "https://*/*"
   ],
 
   "web_accessible_resources": [
