@@ -13,22 +13,22 @@
   "browser_action": {
     "default_title": "iAsst",
     "default_icon": "imgs/icons/iasst_16.png",
-    "default_popup": "view/browser_action/index.html"
+    "default_popup": "views/browser_action/index.html"
   },
 
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["libs/jquery/jquery-2.2.4.min.js", "view/content_scripts/index.js"],
-      "css": ["view/content_scripts/index.css"]
+      "js": ["libs/jquery/jquery-2.2.4.min.js", "views/content_scripts/index.js"],
+      "css": ["views/content_scripts/index.css"]
     }
   ],
 
-  "options_page": "view/options_page/index.html",
+  "options_page": "views/options_page/index.html",
 
   "background": {
     "persistent": true,
-    "page": "view/background/index.html"
+    "page": "views/background/index.html"
   },
 
   "permissions": [
