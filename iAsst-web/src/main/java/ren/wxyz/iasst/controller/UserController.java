@@ -16,19 +16,19 @@ import ren.wxyz.iasst.service.UserService;
 /**
  * 用户相关流转
  *
- * @auther wxyz
+ * @auther wxyz 2016-08-18_00:41
  * @since 0.1
  */
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
-  @Autowired
-  private UserService userService;
+    @Autowired
+    private UserService userService;
 
-  @RequestMapping("info")
-  @ResponseBody
-  public User getUser(String email) {
-    return userService.getUserByLoginInfo(email);
-  }
+    @RequestMapping("info")
+    @ResponseBody
+    public User getUser(String email) {
+        return userService.getUserByLoginInfo(email);
+    }
 }

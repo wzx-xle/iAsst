@@ -12,19 +12,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * 首页
  *
- * @auther wxyz
+ * @auther wxyz 2016-08-18_00:41
  * @since 0.1
  */
 @Controller
 public class IndexController {
 
-  /**
-   * 默认和index页映射方法
-   *
-   * @return view:index
-   */
-  @RequestMapping("/")
-  public String index() {
-    return "index";
-  }
+    /**
+     * 默认和index页映射方法
+     *
+     * @return view:index
+     */
+    @RequestMapping("/")
+    public String index() {
+        return "index";
+    }
 }

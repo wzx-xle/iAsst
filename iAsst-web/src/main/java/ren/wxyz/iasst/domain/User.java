@@ -9,7 +9,7 @@ package ren.wxyz.iasst.domain;
 /**
  * 系统用户
  *
- * @auther wxyz
+ * @auther wxyz 2016-08-18_00:41
  * @since 0.1
  */
 public class User {

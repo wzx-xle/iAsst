@@ -13,14 +13,14 @@ import ren.wxyz.iasst.service.UserService;
 /**
  * 实现用户相关的服务
  *
- * @auther wxyz
+ * @auther wxyz 2016-08-18_00:41
  * @since 0.1
  */
 @Service
 public class UserServiceImpl implements UserService {
 
-  @Override
-  public User getUserByLoginInfo(String loginInfo) {
-    return null;
-  }
+    @Override
+    public User getUserByLoginInfo(String loginInfo) {
+        return null;
+    }
 }
