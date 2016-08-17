@@ -13,7 +13,7 @@
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>一个Chrome插件，方便你使用Chrome</description>
-    <url>http://git.oschina.net/hyhjwzx/iAsst</url>
+    <url>https://github.com/wzx-xle/iAsst</url>
 
     <licenses>
         <license>
@@ -32,9 +32,9 @@
     </developers>
 
     <scm>
-        <connection>scm:https://git.oschina.net/hyhjwzx/iAsst.git</connection>
-        <developerConnection>scm:https://git.oschina.net/hyhjwzx/iAsst.git</developerConnection>
-        <url>https://git.oschina.net/hyhjwzx/iAsst.git</url>
+        <connection>scm:https://github.com/wzx-xle/iAsst.git</connection>
+        <developerConnection>scm:https://github.com/wzx-xle/iAsst.git</developerConnection>
+        <url>https://github.com/wzx-xle/iAsst.git</url>
         <tag>HEAD</tag>
     </scm>
 
