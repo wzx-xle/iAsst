@@ -9,6 +9,7 @@ package ren.wxyz.iasst.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import ren.wxyz.iasst.domain.User;
 import ren.wxyz.iasst.service.UserService;
 
@@ -18,13 +19,15 @@ import ren.wxyz.iasst.service.UserService;
  * @auther wxyz
  * @since 0.1
  */
-@Controller("/user")
+@Controller
+@RequestMapping("/user")
 public class UserController {
 
   @Autowired
   private UserService userService;
 
-  @RequestMapping("/info")
+  @RequestMapping("info")
+  @ResponseBody
   public User getUser(String email) {
     return userService.getUserByLoginInfo(email);
   }
