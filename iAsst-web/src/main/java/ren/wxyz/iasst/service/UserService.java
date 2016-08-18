@@ -6,7 +6,7 @@
  */
 package ren.wxyz.iasst.service;
 
-import ren.wxyz.iasst.domain.User;
+import ren.wxyz.iasst.domain.persistent.User;
 
 /**
  * 用户服务

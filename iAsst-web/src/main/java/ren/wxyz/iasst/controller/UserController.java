@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import ren.wxyz.iasst.domain.User;
+import ren.wxyz.iasst.domain.persistent.User;
 import ren.wxyz.iasst.service.UserService;
 
 /**

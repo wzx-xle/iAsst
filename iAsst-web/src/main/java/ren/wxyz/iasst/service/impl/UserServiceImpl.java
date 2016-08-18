@@ -7,7 +7,7 @@
 package ren.wxyz.iasst.service.impl;
 
 import org.springframework.stereotype.Service;
-import ren.wxyz.iasst.domain.User;
+import ren.wxyz.iasst.domain.persistent.User;
 import ren.wxyz.iasst.service.UserService;
 
 /**
