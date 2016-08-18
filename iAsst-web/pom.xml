@@ -225,7 +225,7 @@
         </dependency>
         <!-- login end -->
 
-        <!-- commons util start -->
+        <!-- commons helper start -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -236,7 +236,7 @@
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
         </dependency>
-        <!-- commons util end -->
+        <!-- commons helper end -->
 
         <!-- google java lib -->
         <dependency>
