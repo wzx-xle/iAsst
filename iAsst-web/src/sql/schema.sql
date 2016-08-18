@@ -26,7 +26,8 @@ CREATE TABLE `t_users` (
   `username` varchar(45) NOT NULL COMMENT '用户名',
   `password` varchar(45) NOT NULL COMMENT '密码',
   `password_salt` varchar(45) NOT NULL COMMENT '密码的盐',
-  `enable` tinyint(4) NOT NULL DEFAULT '1' COMMENT '权限',
+  `enabled` tinyint(4) NOT NULL DEFAULT '1' COMMENT '权限',
+  `token` varchar(128) NOT NULL DEFAULT '' COMMENT '授权码',
   PRIMARY KEY (`oid`),
   UNIQUE KEY `t_users_username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户表';
