@@ -12,10 +12,10 @@ import lombok.Setter;
 import java.util.Date;
 
 /**
- * TODO
+ * 基础持久化类
  *
  * @auther wxyz 2016-08-18_21:17
- * @since version
+ * @since 0.1
  */
 @Getter
 @Setter
