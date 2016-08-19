@@ -9,7 +9,9 @@ package ren.wxyz.iasst.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import ren.wxyz.iasst.domain.dto.UserDto;
 import ren.wxyz.iasst.domain.persistent.User;
 import ren.wxyz.iasst.service.UserService;
 
@@ -26,9 +28,22 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("info")
+    @RequestMapping(value = "login", method = RequestMethod.GET)
+    public String login() {
+        return "user/login";
+    }
+
+    @RequestMapping(value = "login", method = RequestMethod.POST)
     @ResponseBody
-    public User getUser(String email) {
-        return userService.getUserByLoginInfo(email);
+    public UserDto checkLogin(String username, String password) {
+        User user = userService.login(username, password);
+
+        UserDto userDto = new UserDto();
+        userDto.setOid(user.getOid());
+        userDto.setCreatedTime(user.getCreatedTime());
+        userDto.setUpdatedTime(user.getUpdatedTime());
+        userDto.setUsername(user.getUsername());
+
+        return userDto;
     }
 }
