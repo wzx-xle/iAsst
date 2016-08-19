@@ -6,8 +6,12 @@
  */
 package ren.wxyz.iasst.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ren.wxyz.iasst.dao.mapper.UserMapper;
 import ren.wxyz.iasst.domain.persistent.User;
+import ren.wxyz.iasst.exception.BusinessException;
+import ren.wxyz.iasst.helper.bean.ExceptionType;
 import ren.wxyz.iasst.service.UserService;
 
 /**
@@ -19,8 +23,21 @@ import ren.wxyz.iasst.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 
+    @Autowired
+    private UserMapper userMapper;
+
     @Override
-    public User getUserByLoginInfo(String loginInfo) {
-        return null;
+    public User login(String username, String password) {
+        // TODO 校验
+
+        User user = userMapper.selectByUsername(username);
+        if (null == user) {
+            throw new BusinessException(ExceptionType.USER_NOT_FOUND);
+        }
+        if (!user.checkPassword(password)) {
+            throw new BusinessException(ExceptionType.USERNAME_PASSWORD_ERROR);
+        }
+
+        return user;
     }
 }

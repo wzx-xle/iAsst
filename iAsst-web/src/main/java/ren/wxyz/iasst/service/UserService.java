@@ -15,11 +15,13 @@ import ren.wxyz.iasst.domain.persistent.User;
  * @since 0.1
  */
 public interface UserService {
+
     /**
-     * 通过登陆信息来获取用户
+     * 登陆校验
      *
-     * @param loginInfo 登陆信息
-     * @return 用户对象
+     * @param username 用户名
+     * @param password 密码
+     * @return 登陆成功的用户
      */
-    User getUserByLoginInfo(String loginInfo);
+    User login(String username, String password);
 }
