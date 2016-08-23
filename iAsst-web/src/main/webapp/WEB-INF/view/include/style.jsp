@@ -12,3 +12,4 @@
     var CONTEXTPATH = '${pageContext.request.contextPath}';
 </script>
 
+<link rel="stylesheet" href="${ctx}/static/libs/bootstrap/3.3.5/css/bootstrap.min.css">
