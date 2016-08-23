@@ -19,7 +19,7 @@
     <select id="selectByUsername" resultMap="BaseResultMap" parameterType="java.lang.String">
       select
       <include refid="BaseColumnList" />
-      frome users
+      from t_users
       where username = ${username}
     </select>
 </mapper>
