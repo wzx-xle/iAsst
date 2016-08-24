@@ -3,8 +3,8 @@
 <mapper namespace="ren.wxyz.iasst.dao.mapper.UserMapper">
     <resultMap id="BaseResultMap" type="ren.wxyz.iasst.domain.persistent.User">
         <id column="oid" property="oid" jdbcType="INTEGER" />
-        <result column="created_time" property="createdTime" jdbcType="DATETIME" />
-        <result column="updated_time" property="updatedTime" jdbcType="DATETIME" />
+        <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+        <result column="updated_time" property="updatedTime" jdbcType="TIMESTAMP" />
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="password" property="password" jdbcType="VARCHAR" />
         <result column="password_salt" property="passwordSalt" jdbcType="VARCHAR" />
@@ -20,6 +20,6 @@
       select
       <include refid="BaseColumnList" />
       from t_users
-      where username = ${username}
+      where username = #{username}
     </select>
 </mapper>

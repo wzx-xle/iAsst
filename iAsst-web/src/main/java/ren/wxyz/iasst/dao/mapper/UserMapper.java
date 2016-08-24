@@ -6,6 +6,7 @@
  */
 package ren.wxyz.iasst.dao.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import ren.wxyz.iasst.domain.persistent.User;
 
 /**
@@ -16,5 +17,5 @@ import ren.wxyz.iasst.domain.persistent.User;
  */
 public interface UserMapper {
 
-    User selectByUsername(String username);
+    User selectByUsername(@Param("username") String username);
 }
