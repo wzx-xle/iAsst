@@ -7,11 +7,13 @@ mklink /D iAsst ..\src
 
 :package
 IF NOT EXIST %CHROME_PATH% GOTO notchrome
+IF NOT EXIST %CD%\iAsst.pem GOTO new
+:update
 %CHROME_PATH%\chrome.exe --pack-extension=%CD%\iAsst --pack-extension-key=%CD%\iAsst.pem
+GOTO exit
 
-IF NOT ERRORLEVEL 0 GOTO err
-ECHO 插件包输出在：%CD%\iAsst.crx
-PAUSE
+:new
+%CHROME_PATH%\chrome.exe --pack-extension=%CD%\iAsst
 GOTO exit
 
 :notchrome
