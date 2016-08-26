@@ -26,3 +26,7 @@ dependency-reduced-pom.xml
 .settings/
 .project
 .classpath
+
+# chrome-plugin
+iAsst-plugin/install/iAsst
+iAsst-plugin/install/iAsst.crx
