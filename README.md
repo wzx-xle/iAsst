@@ -10,8 +10,8 @@ Chrome插件，帮助你使用Chrome
 2. 右键查字典
 
 ## 架构
-1. chrome插件，实现前端的展示
-2. web服务，提供数据存储
+1. chrome插件，实现前端的展示，[详细文档](iAsst-plugin/README.md)
+2. web服务，提供数据存储，[详细文档](iAsst-web/README.md)
 
 ## 版权声明
 iAsst使用 [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.txt) 协议
