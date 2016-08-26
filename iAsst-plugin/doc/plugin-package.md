@@ -4,7 +4,7 @@
 1. chrome插件的打包依赖`Google Chrome`浏览器
 2. 插件打包提供了两种方式
 	1. 在chrome浏览器上通过图形界面打包
-	2. 使用我提供的BAT脚本[`plugin-package.bat`](plugin-package.bat)
+	2. 使用我提供的BAT脚本`plugin-package.bat`
 
 ## 打包过程
 ### 图形界面方式打包
