@@ -27,3 +27,4 @@ PAUSE
 GOTO exit
 
 :exit
+RD iAsst
