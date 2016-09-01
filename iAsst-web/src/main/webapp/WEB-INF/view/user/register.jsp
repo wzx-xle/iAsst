@@ -9,10 +9,10 @@
   Time: 2016-08-23_20:44
 --%>
 <%@ page contentType="text/html;charset=utf-8" language="java" pageEncoding="utf-8" %>
+<%@ include file="/WEB-INF/view/include/taglibs.jsp" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <%@ include file="/WEB-INF/view/include/taglibs.jsp" %>
     <%@ include file="/WEB-INF/view/include/meta.jsp" %>
     <%@ include file="/WEB-INF/view/include/style.jsp" %>
     <title>注册新用户</title>
