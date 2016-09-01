@@ -9,15 +9,17 @@
   Time: 2016-08-17_22:04
 --%>
 <%@ page language="java" contentType="text/html; chartset=utf-8" pageEncoding="utf-8" %>
+<%@ include file="/WEB-INF/view/include/taglibs.jsp" %>
 <!DOCTYPE html>
 <html>
-    <head>
-        <%@ include file="include/taglibs.jsp" %>
-        <%@ include file="include/meta.jsp" %>
-        <%@ include file="include/style.jsp" %>
-        <title>首页</title>
-    </head>
-    <body>
-        <h2>Hello World!</h2>
-    </body>
+<head>
+    <%@ include file="/WEB-INF/view/include/meta.jsp" %>
+    <%@ include file="/WEB-INF/view/include/style.jsp" %>
+    <title>首页</title>
+</head>
+<body>
+<h2>Hello World!</h2>
+
+<%@ include file="/WEB-INF/view/include/script.jsp" %>
+</body>
 </html>
