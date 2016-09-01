@@ -27,6 +27,8 @@
             <label>密码</label>
             <input type="password" name="password">
             <br>
+            <input type="checkbox" name="remember" value="记住我一个月">
+            <br>
             <button type="submit">登陆</button>
         </form>
     </div>
